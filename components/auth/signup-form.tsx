@@ -12,7 +12,7 @@ export default function SignupForm() {
     setError("");
 
     if (password !== confirmPassword) {
-      setError("Password tidak cocok");
+      setError("Password doesn't match");
       return;
     }
 
@@ -21,7 +21,7 @@ export default function SignupForm() {
 
 return (
   <form onSubmit={handleSubmit} className="space-y-4 bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-md max-w-sm w-full">
-    <h2 className="text-2xl font-bold text-center text-gray-800 dark:text-gray-100">Daftar</h2>
+    <h2 className="text-2xl font-bold text-center text-gray-800 dark:text-gray-100">Sign up</h2>
     
     <label className="block">
       <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Email</span>
@@ -68,7 +68,7 @@ return (
 
     <div className="pt-4">
       <button type="submit" className="w-full bg-primary text-white dark:text-gray-600 py-2 rounded-lg hover:bg-primary/90 transition">
-        Daftar
+        Create an Account
       </button>   
     </div>
   </form>

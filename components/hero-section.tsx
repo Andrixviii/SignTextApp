@@ -42,24 +42,6 @@ export function HeroSection() {
                 className="rounded-md object-cover w-full aspect-[4/3]"
                 priority
               />
-              {/* <div className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground rounded-full p-3 shadow-lg animate-pulse-slow">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="h-6 w-6"
-                >
-                  <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z" />
-                  <path d="M12 16v-4" />
-                  <path d="M12 8h.01" />
-                </svg>
-              </div> */}
             </div>
             {/* Decorative elements */}
             <div className="absolute -z-10 -left-8 -top-8 h-24 w-24 rounded-full bg-primary/20 blur-xl animate-float" />

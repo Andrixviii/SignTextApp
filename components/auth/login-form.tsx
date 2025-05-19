@@ -8,11 +8,11 @@ import toast, { Toaster } from "react-hot-toast";
 const LoginSchema = z.object({
   email: z
     .string()
-    .min(1, "Email wajib diisi")
-    .email("Format email tidak valid"),
+    .min(1, "Email required")
+    .email("Invalid email format"),
   password: z
     .string()
-    .min(6, "Password minimal 6 karakter"),
+    .min(6, "Password at least 6 characters"),
 });
 
 type LoginFormData = z.infer<typeof LoginSchema>;
@@ -28,14 +28,14 @@ export default function LoginForm() {
   });
 
   const onSubmit = async (data: LoginFormData) => {
-    toast.loading("Sedang memproses...", { id: "login" });
+    toast.loading("Processing...", { id: "login" });
 
     try {
       await new Promise(resolve => setTimeout(resolve, 1500)); // Simulasi API
-      toast.success("Login berhasil! Selamat datang.", { id: "login" });
+      toast.success("Login successful! Welcome.", { id: "login" });
       reset();
     } catch {
-      toast.error("Terjadi kesalahan, coba lagi.", { id: "login" });
+      toast.error("Something went wrong, try again.", { id: "login" });
     }
   };
 
@@ -47,7 +47,7 @@ return (
       className="space-y-4 bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg max-w-sm min-w-[380px]"
     >
       <h2 className="text-2xl font-bold text-center text-gray-800 dark:text-gray-100">
-        Masuk ke Akun Anda
+        Log in to Your Account
       </h2>
 
       <label className="block">
@@ -94,14 +94,14 @@ return (
             isSubmitting ? "bg-gray-400 dark:bg-gray-600 cursor-not-allowed" : "bg-primary hover:bg-primary/90"
           }`}
         >
-          {isSubmitting ? "Memproses..." : "Masuk"}
+          {isSubmitting ? "Processing..." : "Login"}
         </button>
       </div>
 
         <p className="text-center text-sm text-gray-600 dark:text-gray-400">
-          Belum punya akun?{" "}
+          Don't have an account?{" "}
           <a href="/signup" className="text-primary hover:underline">
-            Daftar sekarang
+            Sign up now
           </a>
         </p>
       </form>

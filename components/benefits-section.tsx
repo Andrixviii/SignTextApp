@@ -19,8 +19,7 @@ export function BenefitsSection() {
             Why Choose SignText?
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto animate-fade-in">
-            Keunggulan utama SignText dalam menghubungkan dunia bahasa isyarat
-            dan teks secara real-time.
+            The main advantages of SignText in connecting the world of sign language and text in real-time.
           </p>
         </div>
 
@@ -55,24 +54,24 @@ const benefits = [
     icon: <Hand className="w-6 h-6" />,
     title: "Real-time Sign Recognition",
     description:
-      "Mendeteksi bahasa isyarat secara langsung dengan akurasi tinggi menggunakan teknologi AI berbasis gesture.",
+      "Detect sign language directly with high accuracy using AI-powered gesture technology.",
   },
   {
     icon: <Languages className="w-6 h-6" />,
     title: "Text-to-Sign Translation",
     description:
-      "Mengubah teks menjadi visualisasi bahasa isyarat secara otomatis untuk komunikasi dua arah yang inklusif.",
+      "Automatically convert text into sign language visualizations for inclusive two-way communication.",
   },
   {
     icon: <Accessibility className="w-6 h-6" />,
     title: "Inclusive Design",
     description:
-      "Antarmuka sederhana dan ramah pengguna, cocok untuk pengguna tunarungu dan non-tunarungu.",
+      "Simple and user-friendly interface suitable for both deaf and hearing users.",
   },
   {
     icon: <Sparkles className="w-6 h-6" />,
     title: "Learning Mode",
     description:
-      "Terdapat fitur pembelajaran interaktif untuk memahami dan mempelajari bahasa isyarat dengan mudah.",
+      "Interactive learning features to easily understand and study sign language.",
   },
 ];

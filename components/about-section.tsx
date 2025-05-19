@@ -27,13 +27,13 @@ export function AboutSection() {
             SignText — A Bridge Between Signs and Words
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
-            SignText memudahkan komunikasi lintas dunia isyarat dan teks dengan AI-powered gesture recognition. Kami hadir agar tidak ada lagi hambatan berbahasa isyarat di era digital.
+            SignText makes communication across sign languages and text easier with AI-powered gesture recognition. We’re here to remove language barriers in the digital age.
           </p>
           <ul className="list-disc list-inside space-y-2 text-muted-foreground">
             <li>Real-time Sign-to-Text & Text-to-Sign Translation.</li>
-            <li>AI adaptive gesture detection, lebih presisi tiap gerakan.</li>
+            <li>AI adaptive gesture detection, with more precise movement recognition.</li>
             <li>Designed for Accessibility — Simple, Friendly, Inclusive.</li>
-            <li>Panduan interaktif belajar bahasa isyarat dari aplikasi.</li>
+            <li>Interactive guides to learn sign language from the app.</li>
           </ul>
         </div>
       </div>
